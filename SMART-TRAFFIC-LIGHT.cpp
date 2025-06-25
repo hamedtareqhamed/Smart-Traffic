@@ -24,3 +24,22 @@ int cars[scount];
         cout << "\n";
         i++;
     }
+//sort srom from least to most
+int ss =scount;
+for (int i = 0; i < ss - 1; i++) {
+    for (int s = 0; s < ss - 1 - i; s++) {
+        if (cars[s] > cars[s+1]) {
+            swap(cars[s], cars[s+1]);
+            swap(name[s], name[s+1]);
+        }
+    }
+}
+for (int i = 0;i < scount;){
+    int green = 15+cars[i]*10;
+cout << i+1 << "- light "<<name[i]<< " will be green for " <<green<< " seconds\n";
+
+
+i++;
+}
+    return 0;
+}
