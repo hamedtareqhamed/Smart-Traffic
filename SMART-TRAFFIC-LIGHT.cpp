@@ -35,11 +35,11 @@ for (int i = 0; i < ss - 1; i++) {
     }
 }
 for (int i = 0;i < scount;){
-    int green = 15+cars[i]*10;
+    int green = 15+cars[i]*10; 
 cout << i+1 << "- light "<<name[i]<< " will be green for " <<green<< " seconds\n";
+    
 
-
-i++;
+i++;    
 }
     return 0;
 }
